@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/post.css">
+        <title>Social Network Post</title>
+    </head>
+    <body>
+        <main>
+            <div class="post-container" id="Audemars_Piguet">
+                <div class="post">
+                    <header>
+                        <img src="../img/ProfileImg.png" alt="User Avatar">
+                        <a href="#" aria-label="View user profile">Audemars Piguet</a>
+                    </header>
+                    <img src="../img/audemars_piguet.jpg" alt="Post Image">
+                    <p>The temporary exhibition, "Simply Complicated," highlights the skill and watchmaking expertise of the Code 11.59 by Audemars Piguet Universelle.</p>
+                    <section>
+                        <h1>interaction</h1>
+                        <img class="icon likeButton" src="../icon/like-empty.svg" alt="like button" onclick="changeLike()">
+                        <img class="icon commentButton" src="../icon/comment-empty.svg" alt="comment button" onclick="changeComment(/*passare l'id del post*/)">
+                        <img class="icon shareButton" src="../icon/share.svg" alt="comment button" onclick="share()">                
+                    </section>
+                </div>
+                <aside class="comments">
+                    <h2>Commenti</h2>
+                    <p class="description">The temporary exhibition, "Simply Complicated," highlights the skill and watchmaking expertise of the Code 11.59 by Audemars Piguet Universelle.</p>
+                    <p>primo commento</p>
+                    <p>secondo commento</p>
+                    <input type="text" placeholder="aggiungi un commento" title="add comment">
+                </aside>
+            </div>
+        </main>
+
+        <nav class="navbar">
+            <a href="home.html" class="navbar-item">
+                <img class="icon" src="../icon/home.svg" alt="home">
+                <span class="icon-name">Home</span>
+            </a>
+            <a href="#" class="navbar-item">
+                <img class="icon" src="../icon/explore.svg" alt="explore">
+                <span class="icon-name">Explore</span>
+            </a>
+            <a href="chat.html" class="navbar-item">
+                <img class="icon" src="../icon/chat.svg" alt="chat">
+                <span class="icon-name">Chat</span>
+            </a>
+            <a href="creazione-post.html" class="navbar-item">
+                <img class="icon" src="../icon/newPost.svg" alt="new post">
+                <span class="icon-name">New Post</span>
+            </a>
+            <a href="profile.html" class="navbar-item">
+                <img class="icon" src="../icon/profile.svg" alt="personal profile">
+                <span class="icon-name">Profile</span>
+            </a>
+    </nav>
+
+        <script src="../js/post.js"></script>
+
+    </body>
+</html>
