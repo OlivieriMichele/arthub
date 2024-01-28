@@ -51,6 +51,11 @@ main form{
     text-align: center;
 }
 
+.space{
+    padding: 2rem;
+    color: var(--backgnd);
+}
+
 aside{
     display: none;
 }
@@ -118,6 +123,10 @@ aside{
 
     .post header a{
         font-size: 16px;
+    }
+
+    .space{
+        display: none;
     }
 
 }
