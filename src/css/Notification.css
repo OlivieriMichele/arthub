@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.notification-container {
+    position: relative;
+    display: inline-block;
+}
+
+#notificationBtn {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+#userID {
+    display: none;
+}
+
+#notificationDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    background-color: var(--backgnd);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    overflow-y: auto; 
+    max-height: 300px;
+    
+    border-radius: 1rem;
+}
+
+
+.notification-item {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.notification-item {
+    transition: background-color 0.3s;
+}
+
+.notification-item:hover {
+    background-color: var(--contrast);
+}
+
+.notification-sender {
+    font-weight: bold;
+    color: var(--elem2);
+}
+
+.remove-notification {
+    width: 20px;
+    height: 20px;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#toastBox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.toast {
+    width: 300px;
+    height: 60px;
+    background: var(--contrast);
+    font-weight: 500;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 2rem;
+
+    transform: translateX(100%);
+    animation: moveLeft 0.5s linear forwards;
+}
+
+@keyframes moveLeft {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#toastBox img {
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.toast::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: green;
+    animation: anim 5s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+}
+
+.toast.error::after {
+    background: red;
+}
+
+.toast.invalid::after {
+    background: orange;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #notificationDropdown {
+        width: 400px;
+    }
+
+    .toast {
+        font-size: 15px;
+        width: 300px;
+        height: 70px;
+        margin: 15px 0;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    #notificationDropdown {
+        width: 500px;
+    }
+    
+    .toast {
+        font-size: 20px;
+        width: 400px;
+        height: 80px;
+        margin: 20px 0;
+    }
+}
