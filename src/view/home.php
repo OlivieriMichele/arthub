@@ -96,7 +96,7 @@ $userData = $database->getUserByID($loggedInUserID);
         </div>
     </main>
     
-    <?php include_once("Nav.php"); ?>
+    <?php include_once("nav.php"); ?>
     
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/post.js"></script>
