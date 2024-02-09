@@ -47,17 +47,34 @@ main input {
 }
 
 main form{
+    display: flex;
     width: 90%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main form button{
+    background-color: transparent;
+    border: none;
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+header>aside{
+    display: none;
 }
 
 .space{
-    padding: 2rem;
+    padding: 2rem 0;
     color: var(--backgnd);
 }
 
-aside{
-    display: none;
+.searchReturn{
+    margin-top: 1rem;
+    background-color: var(--contrast);
+    padding: 0.5rem 8rem;
+    border-radius: 1.5rem;
 }
 
 .show{
@@ -77,6 +94,7 @@ aside{
 
 .label{
     background: var(--contrast);
+    color: var(--contrast);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,6 +125,12 @@ aside{
     transform: translateX(23px);
 }
 
+.posts-container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media screen and (min-width: 768px) {
 
     * {
@@ -126,9 +150,9 @@ aside{
     }
 
     .space{
-        display: none;
+        height: 2px;
     }
-
+    
 }
 
 @media screen and (min-width: 1280px) {

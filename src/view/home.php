@@ -1,6 +1,6 @@
 <?php
-/* 
-DECOMMENTA A PROGETTO FINITO
+/*  DECOMMENTA A PROGETTO FINITO
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
