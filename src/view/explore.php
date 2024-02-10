@@ -1,5 +1,6 @@
 <?php
 
+/*
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -13,6 +14,9 @@ if (!isset($_SESSION['user_id'])) {
 
 // Ottieni l'ID dell'utente dalla sessione
 $loggedInUserID = $_SESSION['user_id'];
+*/
+
+$loggedInUserID = 1;
 
 include_once('../db/database.php');
 
@@ -76,6 +80,7 @@ $userData = $database->getUserByID($loggedInUserID);
    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
    <script src="../js/Notification.js"></script>
    <script src="../js/menuTheme.js"></script>
+   <script src="../js/importTheme.js"></script>
    <script src="../js/infinityScroll.js"></script>
 </body>
 </html>
