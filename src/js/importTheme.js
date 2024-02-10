@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themePreference = getThemePreference();
   if (themePreference) {
     document.body.classList.toggle("dark", themePreference === 'dark');
+    document.querySelector(".checkbox").checked = true;
   }
 });
 

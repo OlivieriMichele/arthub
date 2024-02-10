@@ -54,6 +54,10 @@ main{
     margin-bottom: 1rem;
 }
 
+.post section img{
+    padding: 0 0.25rem;
+}
+
 .post>section>h1{
     display: none;
 }
@@ -103,6 +107,10 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .comments-container::-webkit-scrollbar {     
+        width: 0; 
     }
 }
 
