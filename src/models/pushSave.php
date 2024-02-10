@@ -1,5 +1,6 @@
 <?php
 
+/*
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -13,6 +14,9 @@ if (!isset($_SESSION['user_id'])) {
 
 // Ottieni l'ID dell'utente dalla sessione
 $loggedInUserID = $_SESSION['user_id'];
+*/
+
+$loggedInUserID = 1; //jist for debugging
 
 include_once('../db/database.php');
 
