@@ -1,9 +1,9 @@
 <?php
-/*  DECOMMENTA A PROGETTO FINITO
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+/*  DECOMMENTA A PROGETTO FINITO
 
 // Verifica se l'utente è autenticato
 if (!isset($_SESSION['user_id'])) {
