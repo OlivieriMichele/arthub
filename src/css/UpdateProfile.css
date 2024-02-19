@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+:root{
+    --backgnd: #E6E6E6;
+    --text: #282c30; /* dark-grey */
+    --contrast: #A1A7B8;
+    --label: #c50000;
+    --button: #006bcf;
+    --elem1: #9a85FC; /* purple */
+    --elem2: #86B7B8; /* green */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--backgnd);
+}
+
+form > label {
+    display: none;
+}
+
+.form-container {
+    text-align: center;
+    background-color: var(--contrast);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.custom-button {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid var(--button);
+    color: var(--button);
+    background-color: var(--backgnd);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section > label {
+    color: var(--text);
+}
+
+.back-button {
+    padding: 8px 16px;
+    background-color: var(--button);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: var(--button);
+    color: #fff;
+}
+
+#image {
+    display: none;
+}
+
+#imageName {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#submitButton {
+    border: none;
+    color: white;
+    background: var(--button);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#submitButton:hover {
+    background-color: var(--backgnd);
+    color: var(--text);
+}
