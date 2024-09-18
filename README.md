@@ -31,3 +31,5 @@ Feature da aggiungere potrebbero essere:
  Cambio tema
  Stories
  Shop
+
+per visualizzare le pagine html: https://olivierimichele.github.io/arthub/template/html/home.html
